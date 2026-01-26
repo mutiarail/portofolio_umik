@@ -28,51 +28,44 @@
 
     <!-- Bagian 1 -->
     <div class="section">
-        <img src="{{ asset('img/foto_Lamaran/Firhan&dina1.jpg') }}" alt="foto">
+        <img src="{{ asset('img/foto_Lamaran/3.jpg') }}" alt="foto">
         <p>
-            Aku tidak menjanjikan hidup yang sempurna, tapi aku berjanji akan selalu berusaha 
-            membahagiakanmu, menjagamu, dan mencintaimu dalam setiap keadaan. 
-            Maukah kamu menjadi pendamping hidupku, berbagi hari, tawa, dan impian bersama selamanya
-        </p>
+            Jadikan pernikahan sebagai ladang ibadah, tempat belajar sabar, dan ruang untuk saling memperbaiki diri.
+Semoga Allah selalu melimpahkan sakinah, mawaddah, dan rahmah dalam rumah tangga kalian.
     </div>
 
     <!-- Bagian 2 -->
     <div class="section reverse">
         <img src="{{ asset('img/foto_Lamaran/Mia&Firli1.jpg') }}" alt="foto">
         <p>
-            Aku tidak menjanjikan hidup yang sempurna, tapi aku berjanji akan selalu berusaha 
-            membahagiakanmu, menjagamu, dan mencintaimu dalam setiap keadaan. 
-            Maukah kamu menjadi pendamping hidupku, berbagi hari, tawa, dan impian bersama selamanya
+            Pernikahan adalah perjalanan panjang yang membutuhkan kesabaran, keikhlasan, dan saling pengertian. Jadikanlah cinta sebagai ibadah, komunikasi sebagai jembatan, dan keluarga sebagai tempat pulang yang penuh ketenangan.
         </p>
     </div>
 
     <!-- Bagian 3 -->
     <div class="section">
-        <img src="{{ asset('img/foto_Lamaran/Firhan&dina1.jpg') }}" alt="foto">
+        <img src="{{ asset('img/foto_Lamaran/2.JPG') }}" alt="foto">
         <p>
-            Aku tidak menjanjikan hidup yang sempurna, tapi aku berjanji akan selalu berusaha 
-            membahagiakanmu, menjagamu, dan mencintaimu dalam setiap keadaan. 
-            Maukah kamu menjadi pendamping hidupku, berbagi hari, tawa, dan impian bersama selamanya
+            Dalam pernikahan, kebahagiaan dibangun dari hal-hal sederhana: saling mendengar, saling menghargai, dan saling menguatkan.
+Semoga cinta yang tumbuh hari ini menjadi pondasi yang kokoh untuk masa depan.
         </p>
     </div>
 
     <!-- Bagian 2 -->
     <div class="section reverse">
-        <img src="{{ asset('img/foto_Lamaran/Firhan&dina2.jpg') }}" alt="foto">
+        <img src="{{ asset('img/foto_Lamaran/7.jpg') }}" alt="foto">
         <p>
-            Aku tidak menjanjikan hidup yang sempurna, tapi aku berjanji akan selalu berusaha 
-            membahagiakanmu, menjagamu, dan mencintaimu dalam setiap keadaan. 
-            Maukah kamu menjadi pendamping hidupku, berbagi hari, tawa, dan impian bersama selamanya
+            Bangun rumah tangga dengan cinta, kepercayaan, dan doa.
+Karena kebahagiaan sejati tumbuh dari kebersamaan yang tulus.
         </p>
     </div>
 
      <!-- Bagian 3 -->
     <div class="section">
-        <img src="{{ asset('img/foto_Lamaran/Mia&Firli1.jpg') }}" alt="foto">
+        <img src="{{ asset('img/foto_Lamaran/4.jpg') }}" alt="foto">
         <p>
-            Aku tidak menjanjikan hidup yang sempurna, tapi aku berjanji akan selalu berusaha 
-            membahagiakanmu, menjagamu, dan mencintaimu dalam setiap keadaan. 
-            Maukah kamu menjadi pendamping hidupku, berbagi hari, tawa, dan impian bersama selamanya
+Pernikahan bukan hanya menyatukan dua insan, tetapi juga menyatukan dua keluarga.
+Oleh karena itu, jagalah komitmen, hormati orang tua, dan peliharalah keharmonisan rumah tangga dengan penuh tanggung jawab dan kasih sayang.
         </p>
     </div>
 
@@ -80,9 +73,8 @@
     <div class="section reverse">
         <img src="{{ asset('img/foto_Lamaran/Mia&Firli2.jpg') }}" alt="foto">
         <p>
-            Aku tidak menjanjikan hidup yang sempurna, tapi aku berjanji akan selalu berusaha 
-            membahagiakanmu, menjagamu, dan mencintaimu dalam setiap keadaan. 
-            Maukah kamu menjadi pendamping hidupku, berbagi hari, tawa, dan impian bersama selamanya
+Cinta bukan tentang kesempurnaan, tapi tentang kesediaan untuk saling melengkapi.
+Semoga langkah yang dimulai hari ini menjadi doa yang terus tumbuh sepanjang waktu.
         </p>
     </div>
 

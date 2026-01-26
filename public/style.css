@@ -1,27 +1,33 @@
 :root {
   --color-brown: #5d2c04;
   --color-orange: #f5b041;
-  --color-dark-text: #5d2c04; /* Warna teks utama yang gelap */
+  --color-dark-text: #5d2c04;
+  /* Warna teks utama yang gelap */
   --color-nav-text: #5d2c04;
 }
+
 /* Update Font Global */
 body {
-  font-family: 'Poppins', sans-serif; /* Mengganti Georgia atau serif lainnya */
+  font-family: 'Poppins', sans-serif;
+  /* Mengganti Georgia atau serif lainnya */
   background-color: white;
   color: var(--color-dark-text);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  -webkit-font-smoothing: antialiased; /* Membuat font terlihat lebih halus */
+  -webkit-font-smoothing: antialiased;
+  /* Membuat font terlihat lebih halus */
 }
 
 /* Update Judul History Team (Sebelumnya Georgia) */
 .title {
   text-align: center;
-  font-family: 'Poppins', sans-serif; /* Pastikan ini bukan Georgia lagi */
+  font-family: 'Poppins', sans-serif;
+  /* Pastikan ini bukan Georgia lagi */
   font-size: 26px;
   margin-bottom: 60px;
-  font-weight: 600; /* Dibuat lebih tegas */
+  font-weight: 600;
+  /* Dibuat lebih tegas */
   letter-spacing: 1px;
 }
 
@@ -32,8 +38,8 @@ body {
 }
 
 /* Update Teks Filosofi & Section */
-.team-philosophy, 
-.section p, 
+.team-philosophy,
+.section p,
 .text p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -45,7 +51,8 @@ body {
   background-color: #ffffff;
   color: #000000;
   padding: 40px 20px 20px;
-  font-family: 'Poppins', sans-serif; /* Mengganti Arial */
+  font-family: 'Poppins', sans-serif;
+  /* Mengganti Arial */
 }
 
 .footer-section h3 {
@@ -56,11 +63,17 @@ body {
 }
 
 /* Nama Founder & Member */
-.founder-card .name, 
+.name-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.founder-card .name,
 .member-card .name {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -74,7 +87,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff; /* warna border luar hitam */
+  background: #ffffff;
+  /* warna border luar hitam */
 }
 
 .nav-left {
@@ -94,7 +108,8 @@ body {
 }
 
 .logo-kagoem {
-  height: 40px; /* ukuran ideal agar proporsional */
+  height: 40px;
+  /* ukuran ideal agar proporsional */
   object-fit: contain;
 }
 
@@ -104,6 +119,7 @@ body {
   text-decoration: none;
   color: #4a1e0b;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* MAIN SECTION */
@@ -119,7 +135,8 @@ body {
 .hero-row {
   display: flex;
   align-items: center;
-  gap: 5px; /* jarak antara logo & teks */
+  gap: 5px;
+  /* jarak antara logo & teks */
 }
 
 .hero-logo {
@@ -131,44 +148,93 @@ body {
   color: #4a1e0b;
   font-weight: 500;
 }
+
 /* =======================================
    📱 RESPONSIVE UNTUK HP
    ======================================= */
+/* =======================================
+   📱 RESPONSIVE UNTUK HP
+   ======================================= */
+/* Global Image Rule */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 480px) {
   .nav {
     padding: 15px 15px;
+    flex-wrap: wrap;
+    /* Izinkan wrapping jika konten terlalu lebar */
+    justify-content: center;
+    /* Pusatkan konten di mobile */
+    gap: 15px;
+  }
+
+  .nav-left {
+    justify-content: center;
+    /* Pusatkan logo */
+    width: 100%;
+    /* Logo ambil lebar penuh baris pertama */
   }
 
   /* logo di kiri mengecil */
   .logo-baba {
-    height: 26px;
+    height: 30px;
   }
 
   .logo-kaia {
-    height: 24px;
+    height: 28px;
+  }
+
+  .logo-kagoem {
+    height: 30px;
   }
 
   /* menu di kanan mengecil */
+  .nav-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
   .nav-right a {
-    margin-left: 12px;
-    font-size: 15px;
+    margin-left: 0;
+    /* Reset margin kiri */
+    margin: 0 5px;
+    /* Tambah margin kiri kanan */
+    font-size: 14px;
+    padding: 5px;
+    /* Tambah area tap */
   }
 
   /* konten hero */
   .hero {
-    height: 70vh;
+    height: 60vh;
+    /* Sesuaikan tinggi hero di HP */
     padding: 10px;
+    flex-direction: column;
+    /* Stack vertikal */
+  }
+
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
   }
 
   .hero-logo {
-    width: 150px; /* mengecil untuk HP */
+    width: 200px;
+    /* Lebar logo hero di HP */
+    margin-bottom: 15px;
   }
 
   .tagline {
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 18px;
+    margin-top: 0;
   }
 }
+
 /* ==========================
    WEDDING GALLERY
    ========================== */
@@ -238,6 +304,7 @@ body {
     padding: 20px;
   }
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -263,6 +330,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* ================================================= */
 /* STYLE UNTUK HALAMAN TEAM                          */
 /* ================================================= */
@@ -304,7 +372,8 @@ body {
 .team-photo-container img {
   width: 100%;
   height: auto;
-  border-radius: 8px; /* Sudut sedikit membulat (opsional) */
+  border-radius: 8px;
+  /* Sudut sedikit membulat (opsional) */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -313,14 +382,16 @@ body {
   margin: 0 auto 60px auto;
   font-size: 1em;
   line-height: 1.6;
-  color: #444; /* Sedikit lebih gelap dari teks utama */
+  color: #444;
+  /* Sedikit lebih gelap dari teks utama */
 }
 
 /* --- Founders Section --- */
 .founders-section {
   display: flex;
   justify-content: center;
-  gap: 80px; /* Jarak antara Umik Aci dan BaBa Wira */
+  gap: 80px;
+  /* Jarak antara Umik Aci dan BaBa Wira */
   margin-bottom: 50px;
 }
 
@@ -356,7 +427,8 @@ body {
   display: grid;
   /* Membuat grid 10 kolom */
   grid-template-columns: repeat(10, 1fr);
-  gap: 15px 10px; /* Jarak antar ikon */
+  gap: 15px 10px;
+  /* Jarak antar ikon */
   max-width: 900px;
   margin: 0 auto;
 }
@@ -369,7 +441,8 @@ body {
 .member-card [role="img"] {
   /* Style untuk placeholder gambar member */
   display: block;
-  width: 60px; /* Ukuran ikon member yang kecil */
+  width: 60px;
+  /* Ukuran ikon member yang kecil */
   height: 60px;
   margin: 0 auto 5px auto;
   /* Ganti dengan gambar avatar member yang sebenarnya */
@@ -406,19 +479,21 @@ body {
   .founders-section {
     flex-direction: column;
     gap: 30px;
+    align-items: center;
   }
 
   .member-grid {
-    /* Mengurangi kolom menjadi 5 agar ikon tidak terlalu kecil */
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px 5px;
+    /* Mengurangi kolom menjadi 2 agar ikon lebih besar dan terbaca */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
   }
 
   .member-card [role="img"] {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
+
 .founder-photo {
   width: 140px;
   height: 140px;
@@ -439,6 +514,7 @@ body {
 .founder-card {
   text-align: center;
 }
+
 .member-grid {
   width: 90%;
   max-width: 900px;
@@ -446,7 +522,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: 25px;
-  justify-items: center; /* Foto & teks tetap di tengah */
+  justify-items: center;
+  /* Foto & teks tetap di tengah */
 }
 
 .member-card {
@@ -501,10 +578,16 @@ body {
 
 /* RESPONSIVE UNTUK HP */
 @media (max-width: 768px) {
+
   .section,
   .section.reverse {
     flex-direction: column;
     text-align: center;
+  }
+
+  /* Pastikan gambar di Lamaran page selalu di atas teks saat mobile */
+  .section.reverse {
+    flex-direction: column;
   }
 
   .section img,
@@ -521,6 +604,7 @@ body {
     padding: 0 10px;
   }
 }
+
 /* bagian poto di pallaing bawah di team/
 * {
     margin: 0;
@@ -560,14 +644,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px; /* 🔥 jarak sudah didekatkan */
+  gap: 5px;
+  /* 🔥 jarak sudah didekatkan */
 }
 
 /* Teks */
 .text {
   display: flex;
   flex-direction: column;
-  align-items: center; /* 🔥 judul + teks rata kiri */
+  align-items: center;
+  /* 🔥 judul + teks rata kiri */
 }
 
 .text h3 {
@@ -581,8 +667,10 @@ body {
   font-size: 17px;
   color: #5a2e00;
   line-height: 1.5;
-  text-align: left; /* 🔥 teks sekarang rata kiri */
-  margin-left: 0; /* pastikan tidak ada geser */
+  text-align: left;
+  /* 🔥 teks sekarang rata kiri */
+  margin-left: 0;
+  /* pastikan tidak ada geser */
 }
 
 /* Scroll horizontal */
@@ -607,7 +695,8 @@ body {
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
-    gap: 10px; /* di HP lebih dekat lagi */
+    gap: 10px;
+    /* di HP lebih dekat lagi */
     text-align: justify;
   }
 
@@ -624,12 +713,17 @@ body {
   /* ... */
 
   /* Tambahkan margin-top di sini */
-  margin-top: 80px; /* Anda bisa menyesuaikan angka (80px, 100px, dsb.) */
+  margin-top: 80px;
+  /* Anda bisa menyesuaikan angka (80px, 100px, dsb.) */
 }
+
 .main-footer {
-  background-color: #ffffff; /* Warna latar belakang gelap */
-  color: #000000; /* Warna teks terang */
-  padding: 40px 20px 20px; /* Padding atas, samping, bawah */
+  background-color: #ffffff;
+  /* Warna latar belakang gelap */
+  color: #000000;
+  /* Warna teks terang */
+  padding: 40px 20px 20px;
+  /* Padding atas, samping, bawah */
   font-family: Arial, sans-serif;
 }
 
@@ -637,23 +731,31 @@ body {
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex; /* Menggunakan Flexbox */
-  justify-content: space-between; /* Memberi jarak antar kolom */
-  flex-wrap: wrap; /* Agar kolom bisa turun ke bawah di layar kecil */
+  display: flex;
+  /* Menggunakan Flexbox */
+  justify-content: space-between;
+  /* Memberi jarak antar kolom */
+  flex-wrap: wrap;
+  /* Agar kolom bisa turun ke bawah di layar kecil */
   gap: 30px;
-  color: #000000; /* Warna tautan */
-  text-decoration: none; /* Menghilangkan garis bawah */
+  color: #000000;
+  /* Warna tautan */
+  text-decoration: none;
+  /* Menghilangkan garis bawah */
   transition: color 0.3s;
 }
 
 /* Gaya untuk setiap bagian/kolom */
 .footer-section {
-  flex: 1; /* Memberikan ukuran yang sama */
-  min-width: 250px; /* Lebar minimum agar tidak terlalu sempit */
+  flex: 1;
+  /* Memberikan ukuran yang sama */
+  min-width: 250px;
+  /* Lebar minimum agar tidak terlalu sempit */
 }
 
 .footer-section h3 {
-  color: #3498db; /* Warna biru untuk judul */
+  color: #3498db;
+  /* Warna biru untuk judul */
   margin-bottom: 15px;
   font-size: 1.2em;
 }
@@ -669,8 +771,10 @@ body {
 }
 
 .footer-section ul li a {
-  color: #000000; /* Warna tautan */
-  text-decoration: none; /* Menghilangkan garis bawah */
+  color: #000000;
+  /* Warna tautan */
+  text-decoration: none;
+  /* Menghilangkan garis bawah */
   transition: color 0.3s;
 }
 
@@ -683,14 +787,18 @@ body {
 /* Media Query untuk layar kecil (mobile) */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column; /* Mengubah tata letak menjadi tumpukan vertikal */
+    flex-direction: column;
+    /* Mengubah tata letak menjadi tumpukan vertikal */
     gap: 20px;
   }
+
   .footer-section {
     min-width: 100%;
     text-align: center;
   }
+
   .footer-section ul {
-    text-align: center; /* Rata tengah list item */
+    text-align: center;
+    /* Rata tengah list item */
   }
 }
