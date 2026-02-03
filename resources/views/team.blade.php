@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baba - Team</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -17,6 +17,11 @@
             <img src="{{ asset('img/logo/logo_Kaia.png') }}" class="logo-kaia" alt="Baba Logo">
         </div>
 
+                <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <nav class="nav-right">
             <a href="{{ url('/') }}">Home</a>
             <a href="{{ url('/wedding') }}">Wedding</a>
@@ -97,11 +102,6 @@
             <p class="role">project Manager</p>
         </div>
         <div class="member-card">
-            <img src="{{ asset('img/anggota/rizki.png') }}" alt="Rizki" class="member-photo">
-            <a href="https://www.instagram.com/riskialfn" target="_blank" class="name-link"><p class="name">Rizki</p></a>
-            <p class="role">project Manager</p>
-        </div>
-        <div class="member-card">
             <img src="{{ asset('img/anggota/Toti.png') }}" alt="Toty" class="member-photo">
             <a href="https://www.instagram.com/adestianandita" target="_blank" class="name-link"><p class="name">Toty</p></a>
             <p class="role">project Manager</p>
@@ -144,7 +144,7 @@
         <div class="section">
             <div class="text">
                 <h3>Meet the good</h3>
-                <p>Foto kebersamaan BaBa Word 2024</p>
+                <p>Foto kebersamaan BaBa Award 2024</p>
             </div>
             <div class="scroll-box">
                 <img src="{{ asset('img/baba_word_2025/poto2.jpeg') }}" alt="foto">
@@ -159,7 +159,7 @@
         <div class="section">
             <div class="text">
                 <h3>Meet the good</h3>
-                <p>Foto kebersamaan BaBa Word 2025</p>
+                <p>Foto kebersamaan BaBa Award 2025</p>
             </div>
             <div class="scroll-box">
                 <img src="{{ asset('img/team/1.JPG') }}" alt="foto">
@@ -194,5 +194,11 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-right').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
